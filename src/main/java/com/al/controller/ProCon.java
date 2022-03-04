@@ -30,8 +30,12 @@ public class ProCon {
         System.out.println("provinces = " + provinces);
         return provinces;
     }
+
     @GetMapping("/city/query/{pNo}.do")
-    public List<Map<String,Object>> queryCity(@PathVariable Integer pNo){
+    public List<Map<String, Object>> queryCity(@PathVariable Integer pNo) {
         return proService.queryCity(pNo);
+    }
+    public void test(){
+
     }
 }
